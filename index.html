@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Madiba Godfrey Makwale — Portfolio</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #0b1020; color: #e5e7eb; margin: 0; }
+    header, footer { text-align: center; padding: 20px; background-color: #101734; }
+    a { color: #0ea5e9; text-decoration: none; }
+    .wrap { max-width: 1100px; margin: auto; padding: 20px; }
+    h1, h2, h3 { color: #0ea5e9; }
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .project-card { background: #101734; border-radius: 10px; overflow: hidden; box-shadow: 0 0 10px rgba(0,0,0,0.3); }
+    .project-card img { width: 100%; height: 180px; object-fit: cover; }
+    .project-card .content { padding: 15px; }
+    .cv-button { display: inline-block; background-color: #0ea5e9; color: #06101a; padding: 10px 20px; border-radius: 8px; font-weight: bold; margin-top: 10px; }
+    .cv-button:hover { filter: brightness(1.1); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Madiba Godfrey Makwale</h1>
+    <p>Diploma in Information Technology | Software • Networking • Cloud • Cybersecurity</p>
+    <a class="cv-button" href="cv.pdf" download>📄 Download CV</a>
+  </header>
+
+  <main class="wrap">
+    <section>
+      <h2>Projects Gallery</h2>
+      <div class="projects">
+        <div class="project-card">
+          <img src="images/linux-server.jpg" alt="Linux Server Administration">
+          <div class="content">
+            <h3>Linux Server Administration</h3>
+            <p>Configured a secure Linux server with user management, file system configuration, and hardening.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="images/network-config.jpg" alt="Network Configuration">
+          <div class="content">
+            <h3>Network Configuration</h3>
+            <p>Designed a small business network including DNS, DHCP, and security measures.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="images/web-dev.jpg" alt="Web Development">
+          <div class="content">
+            <h3>Web Development</h3>
+            <p>Developed a responsive website using HTML, CSS, and JavaScript.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Madiba Godfrey Makwale • Hosted on GitHub Pages</p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
